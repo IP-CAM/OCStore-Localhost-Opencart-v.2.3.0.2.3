@@ -69,7 +69,7 @@ class ControllerAccountEdit extends Controller {
 		$data['entry_email'] = $this->language->get('entry_email');
 		//four comments in this file
 		//$data['entry_telephone'] = $this->language->get('entry_telephone');
-		$data['entry_fax'] = $this->language->get('entry_fax');
+		//$data['entry_fax'] = $this->language->get('entry_fax');
 
 		$data['button_continue'] = $this->language->get('button_continue');
 		$data['button_back'] = $this->language->get('button_back');
@@ -149,7 +149,7 @@ class ControllerAccountEdit extends Controller {
 			$data['telephone'] = $customer_info['telephone'];
 		} else {
 			$data['telephone'] = '';
-		}*/
+		}
 
 		if (isset($this->request->post['fax'])) {
 			$data['fax'] = $this->request->post['fax'];
@@ -157,7 +157,7 @@ class ControllerAccountEdit extends Controller {
 			$data['fax'] = $customer_info['fax'];
 		} else {
 			$data['fax'] = '';
-		}
+		}*/
 
 		// Custom Fields
 		$this->load->model('account/custom_field');

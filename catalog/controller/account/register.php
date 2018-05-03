@@ -219,6 +219,7 @@ class ControllerAccountRegister extends Controller {
 			$data['telephone'] = '';
 		}*/
 
+		/*
 		if (isset($this->request->post['fax'])) {
 			$data['fax'] = $this->request->post['fax'];
 		} else {
@@ -229,8 +230,9 @@ class ControllerAccountRegister extends Controller {
 			$data['company'] = $this->request->post['company'];
 		} else {
 			$data['company'] = '';
-		}
-
+		} */
+		//$data['company'] = '';
+		
 		if (isset($this->request->post['address_1'])) {
 			$data['address_1'] = $this->request->post['address_1'];
 		} else {
