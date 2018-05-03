@@ -381,7 +381,7 @@ $(document).delegate('#button-ip-add', 'click', function() {
 			$('#button-ip-add').button('reset');
 		},
 		success: function(json) {
-			$('.alert').remove();
+			 
 
 			if (json['error']) {
 				$('#content > .container-fluid').prepend('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
@@ -408,7 +408,7 @@ $(document).delegate('#button-invoice', 'click', function() {
 			$('#button-invoice').button('reset');
 		},
 		success: function(json) {
-			$('.alert').remove();
+			 
 
 			if (json['error']) {
 				$('#content > .container-fluid').prepend('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
@@ -438,7 +438,7 @@ $(document).delegate('#button-reward-add', 'click', function() {
 			$('#button-reward-add').button('reset');
 		},
 		success: function(json) {
-			$('.alert').remove();
+			 
 
 			if (json['error']) {
 				$('#content > .container-fluid').prepend('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
@@ -468,7 +468,7 @@ $(document).delegate('#button-reward-remove', 'click', function() {
 			$('#button-reward-remove').button('reset');
 		},
 		success: function(json) {
-			$('.alert').remove();
+			 
 
 			if (json['error']) {
 				$('#content > .container-fluid').prepend('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
@@ -498,7 +498,7 @@ $(document).delegate('#button-commission-add', 'click', function() {
 			$('#button-commission-add').button('reset');
 		},
 		success: function(json) {
-			$('.alert').remove();
+			 
 
 			if (json['error']) {
 				$('#content > .container-fluid').prepend('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
@@ -528,7 +528,7 @@ $(document).delegate('#button-commission-remove', 'click', function() {
 			$('#button-commission-remove').button('reset');
 		},
 		success: function(json) {
-			$('.alert').remove();
+			 
 
 			if (json['error']) {
 				$('#content > .container-fluid').prepend('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
@@ -556,7 +556,7 @@ $.ajax({
 	data: 'key=<?php echo $api_key; ?>',
 	crossDomain: true,
 	success: function(json) {
-		$('.alert').remove();
+		 
 
         if (json['error']) {
     		if (json['error']['key']) {
@@ -586,6 +586,38 @@ $('#history').delegate('.pagination a', 'click', function(e) {
 $('#history').load('index.php?route=sale/order/history&token=<?php echo $token; ?>&order_id=<?php echo $order_id; ?>');
 
 $('#button-history').on('click', function() {
+//
+			<?php $for23 = (version_compare(VERSION, "2.3.0", '>='))?"extension/":""; ?>
+			$.ajax({
+				url: 'index.php?route=<?php echo $for23;?>feed/yamodule/changestatus&token=<?php echo $token; ?>&order_id=<?php echo $order_id; ?>',
+				type: 'post',
+				dataType: 'json',
+				data: 'order_status_id=' + encodeURIComponent($('select[name=\'order_status_id\']').val()) + '&notify=' + ($('input[name=\'notify\']').prop('checked') ? 1 : 0) + '&override=' + ($('input[name=\'override\']').prop('checked') ? 1 : 0) + '&append=' + ($('input[name=\'append\']').prop('checked') ? 1 : 0) + '&comment=' + encodeURIComponent($('textarea[name=\'comment\']').val()),
+				beforeSend: function() {
+					$('#button-commission-remove').button('loading');
+				},
+				complete: function() {
+					$('#button-commission-remove').button('reset');
+				},
+				success: function(json) {
+					$('.alert').remove();
+
+					if (json['error']) {
+						$('#content > .container-fluid').prepend('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + '</div>');
+					}
+
+					if (json['success']) {
+						$('#content > .container-fluid').prepend('<div class="alert alert-success"><i class="fa fa-check-circle"></i> ' + json['success'] + '</div>');
+
+						$('#button-commission-remove').replaceWith('<button id="button-commission-add" data-toggle="tooltip" title="<?php echo $button_commission_add; ?>" class="btn btn-success btn-xs"><i class="fa fa-plus-circle"></i></button>');
+					}
+				},
+				error: function(xhr, ajaxOptions, thrownError) {
+					alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+				}
+			});
+			//
+			
 	/*
 	if (typeof verifyStatusChange == 'function'){
 		if (verifyStatusChange() == false){
@@ -609,7 +641,7 @@ $('#button-history').on('click', function() {
 			$('#button-history').button('reset');
 		},
 		success: function(json) {
-			$('.alert').remove();
+			 
 
 			if (json['error']) {
 				$('#history').before('<div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + ' <button type="button" class="close" data-dismiss="alert">&times;</button></div>');
@@ -682,7 +714,7 @@ $('#button-track_no-add').on('click', function() {
 			$('#button-track_no-add').attr('disabled', 'disabled');
 		},
 		success: function(json) {
-			$('.alert').remove();
+			 
 
 			if (json['error']) {
 				$('.container-fluid').eq(1).find('.row').eq(0).before('<div class="track_no_alert alert alert-danger"><i class="fa fa-exclamation-circle"></i> ' + json['error'] + ' <button data-dismiss="alert" class="close" type="button">×</button></div>');
