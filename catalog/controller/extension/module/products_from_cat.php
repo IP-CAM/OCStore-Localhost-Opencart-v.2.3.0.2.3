@@ -18,10 +18,12 @@ class ControllerExtensionModuleProductsFromCat extends Controller {
 		//next lines decommented by Zuev
 		//$link = html_entity_decode($setting['link']);
 
-		if(count($setting['categories']) < 2){
-			$data['link'] = $this->url->link('product/category', 'path=' . $setting['categories'][0]);
+		if(count($setting['categories']) == 1){
+				$data['link'] = $this->url->link('product/category', 'path=' . $setting['categories'][0]);
+				//echo $data['link'];
+				//echo $setting['categories'][0];
 		} else {
-			$data['link'] = false;
+			$data['link'] = '#';
 		}
 
 		$data['text_tax'] = $this->language->get('text_tax');

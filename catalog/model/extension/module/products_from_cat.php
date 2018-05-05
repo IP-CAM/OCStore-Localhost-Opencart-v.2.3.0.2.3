@@ -48,14 +48,26 @@ class ModelExtensionModuleProductsFromCat extends Model {
 			$implode = implode(",", $categories);
 		}
 
-		$query = $this->db->query("SELECT product_id FROM " . DB_PREFIX . "product_to_category WHERE category_id IN( ". $implode ." ) LIMIT ".$limit );
+		//$query = $this->db->query("SELECT product_id FROM " . DB_PREFIX . "product_to_category WHERE category_id IN( ". $implode ." ) LIMIT ".$limit );
+		$query = $this->db->query("SELECT product_id FROM " . DB_PREFIX . "product_to_category WHERE category_id IN( ". $implode ." ) LIMIT "."2000");
 
 		$product_ids = array();
 
 		foreach ($query->rows as $row) {
 			$product_ids[] = $row['product_id'];
 		}
-
+		
+		$arr = array (2=>2,1=>1);
+		//arsort($arr);
+		//if(count($product_ids) > 1)
+			
+		arsort($product_ids);
+		/*foreach($product_ids as $id){
+			echo $id;
+		}*/
+		
+		$product_ids = array_slice($product_ids, 0, $limit+1);
+		
 		return $product_ids;
 	}
 	

@@ -103,3 +103,71 @@
 2018-05-04 19:16:16 - PHP Notice:  Undefined variable: error_telephone in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 77
 2018-05-04 19:16:16 - PHP Notice:  Undefined variable: fax in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 86
 2018-05-04 19:16:16 - PHP Notice:  Undefined variable: company in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 250
+2018-05-04 21:20:58 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-04 21:21:09 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-04 21:21:36 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-04 21:34:46 - PHP Warning:  arsort() expects parameter 1 to be array, null given in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 60
+2018-05-04 21:34:46 - PHP Warning:  arsort() expects parameter 1 to be array, null given in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 60
+2018-05-04 21:38:51 - PHP Notice:  Array to string conversion in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 63
+2018-05-04 21:38:51 - PHP Notice:  Array to string conversion in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 63
+2018-05-04 21:40:45 - PHP Warning:  arsort() expects parameter 1 to be array, null given in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 62
+2018-05-04 21:40:45 - PHP Warning:  arsort() expects parameter 1 to be array, null given in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 62
+2018-05-04 21:41:48 - PHP Notice:  Undefined variable: products_ids in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 62
+2018-05-04 21:41:49 - PHP Notice:  Undefined variable: products_ids in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 62
+2018-05-04 22:33:16 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-04 22:33:24 - PHP Notice:  Undefined variable: categories in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 81
+2018-05-04 22:33:24 - PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 81
+2018-05-04 22:33:24 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-04 22:33:44 - PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\ocstore.localhost\admin\controller\extension\module\products_from_cat.php on line 183
+2018-05-04 22:33:44 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-04 22:33:55 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-04 22:34:24 - PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\ocstore.localhost\admin\controller\extension\module\products_from_cat.php on line 183
+2018-05-04 22:34:24 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-04 22:36:32 - PHP Notice:  Uninitialized string offset: 0 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 22
+2018-05-04 22:36:32 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 39
+2018-05-04 22:37:19 - PHP Notice:  Uninitialized string offset: 0 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 22
+2018-05-04 22:37:19 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 39
+2018-05-04 22:38:05 - PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\ocstore.localhost\admin\controller\extension\module\products_from_cat.php on line 183
+2018-05-04 22:38:05 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-04 22:38:35 - PHP Notice:  Uninitialized string offset: 0 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 22
+2018-05-04 22:38:35 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 41
+2018-05-05 20:06:01 - PHP Notice:  Uninitialized string offset: 0 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 22
+2018-05-05 20:06:01 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 41
+2018-05-05 20:07:56 - PHP Notice:  Uninitialized string offset: 0 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 22
+2018-05-05 20:07:56 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 41
+2018-05-05 20:08:41 - PHP Notice:  Uninitialized string offset: 0 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 22
+2018-05-05 20:08:41 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 41
+2018-05-05 20:09:40 - PHP Notice:  Uninitialized string offset: 0 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 22
+2018-05-05 20:09:40 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 41
+2018-05-05 20:09:51 - PHP Notice:  Uninitialized string offset: 0 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 22
+2018-05-05 20:09:51 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 41
+2018-05-05 20:10:42 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\extension\module\products_from_cat.tpl on line 6
+2018-05-05 20:10:42 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\extension\module\products_from_cat.tpl on line 6
+2018-05-05 20:10:42 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\extension\module\products_from_cat.tpl on line 6
+2018-05-05 20:10:42 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 41
+2018-05-05 20:12:12 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\extension\module\products_from_cat.tpl on line 6
+2018-05-05 20:12:12 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\extension\module\products_from_cat.tpl on line 6
+2018-05-05 20:12:12 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\extension\module\products_from_cat.tpl on line 6
+2018-05-05 20:12:12 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 41
+2018-05-05 20:12:36 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\extension\module\products_from_cat.tpl on line 6
+2018-05-05 20:12:36 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\extension\module\products_from_cat.tpl on line 6
+2018-05-05 20:12:36 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\extension\module\products_from_cat.tpl on line 6
+2018-05-05 20:16:33 - PHP Notice:  Undefined variable: settings in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 24
+2018-05-05 20:16:33 - PHP Notice:  Undefined variable: settings in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 24
+2018-05-05 20:16:33 - PHP Notice:  Undefined variable: settings in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 24
+2018-05-05 20:16:50 - PHP Notice:  Undefined index: catigories in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 24
+2018-05-05 20:16:50 - PHP Notice:  Undefined index: catigories in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 24
+2018-05-05 20:16:50 - PHP Notice:  Undefined index: catigories in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 24
+2018-05-05 20:17:57 - PHP Notice:  Undefined offset: 1 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 24
+2018-05-05 20:17:57 - PHP Notice:  Undefined offset: 1 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 24
+2018-05-05 20:17:57 - PHP Notice:  Undefined offset: 1 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 24
+2018-05-05 20:21:47 - PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\ocstore.localhost\admin\controller\extension\module\products_from_cat.php on line 183
+2018-05-05 20:21:47 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-05 20:22:44 - PHP Warning:  Invalid argument supplied for foreach() in D:\OSPanel\domains\ocstore.localhost\admin\controller\extension\module\products_from_cat.php on line 183
+2018-05-05 20:22:44 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-05 20:27:16 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-05 20:27:51 - PHP Notice:  Uninitialized string offset: 0 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 22
+2018-05-05 20:27:51 - PHP Notice:  Uninitialized string offset: 0 in D:\OSPanel\domains\ocstore.localhost\catalog\controller\extension\module\products_from_cat.php on line 24
+2018-05-05 20:27:51 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 39
+2018-05-05 20:30:24 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-05 20:41:14 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109

@@ -180,8 +180,10 @@ class ControllerExtensionModuleProductsFromCat extends Controller {
 			$data['products'] = $this->request->post['categories'];
 		} elseif (!empty($module_info)) {
 			$data['categories'] = array();
-			foreach ( $module_info['categories'] as $cat ){
-				$data['categories'][] = $this->model_catalog_category->getCategory($cat);
+			if(!empty($module_info['categories'])){
+				foreach ( $module_info['categories'] as $cat ){
+					$data['categories'][] = $this->model_catalog_category->getCategory($cat);
+				}
 			}
 		} else {
 			$data['products'] = array();
