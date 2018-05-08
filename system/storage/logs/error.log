@@ -171,3 +171,15 @@
 2018-05-05 20:27:51 - PHP Warning:  implode(): Invalid arguments passed in D:\OSPanel\domains\ocstore.localhost\catalog\model\extension\module\products_from_cat.php on line 39
 2018-05-05 20:30:24 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
 2018-05-05 20:41:14 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-05-05 20:50:53 - PHP Notice:  Undefined variable: telephone in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 76
+2018-05-05 20:50:53 - PHP Notice:  Undefined variable: error_telephone in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 77
+2018-05-05 20:50:53 - PHP Notice:  Undefined variable: fax in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 86
+2018-05-05 20:50:53 - PHP Notice:  Undefined variable: company in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 250
+2018-05-05 20:51:03 - PHP Notice:  Undefined variable: telephone in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 76
+2018-05-05 20:51:03 - PHP Notice:  Undefined variable: error_telephone in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 77
+2018-05-05 20:51:03 - PHP Notice:  Undefined variable: fax in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 86
+2018-05-05 20:51:03 - PHP Notice:  Undefined variable: company in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 250
+2018-05-08 19:24:41 - PHP Notice:  Undefined variable: telephone in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 76
+2018-05-08 19:24:41 - PHP Notice:  Undefined variable: error_telephone in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 77
+2018-05-08 19:24:41 - PHP Notice:  Undefined variable: fax in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 86
+2018-05-08 19:24:41 - PHP Notice:  Undefined variable: company in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 250
