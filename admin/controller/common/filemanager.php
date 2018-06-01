@@ -70,7 +70,7 @@ class ControllerCommonFileManager extends Controller {
 			}
 
 			// Get files
-			$files = glob($directory . '/' . $filter_name . '*.{jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF}', GLOB_BRACE);
+			$files = glob($directory . '/' . $filter_name . '*.{jpg,jpeg,png,gif,pdf,xls,xlsx,JPG,JPEG,PNG,GIF,PDF,XLS,XLSX}', GLOB_BRACE);
 
 			if (!$files) {
 				$files = array();
@@ -102,6 +102,9 @@ class ControllerCommonFileManager extends Controller {
 
 				if (isset($this->request->get['thumb'])) {
 					$url .= '&thumb=' . $this->request->get['thumb'];
+					//echo $this->request->get['thumb'];
+				} else {
+					$url .= '&thumb=' .'/favicon.ico';
 				}
 
 				$data['images'][] = array(
@@ -304,7 +307,12 @@ class ControllerCommonFileManager extends Controller {
 						'jpg',
 						'jpeg',
 						'gif',
-						'png'
+						'png',
+						//user code starts
+						'xls',
+						'xlsx',
+						'pdf'
+						//end user code
 					);
 	
 					if (!in_array(utf8_strtolower(utf8_substr(strrchr($filename, '.'), 1)), $allowed)) {
@@ -317,7 +325,12 @@ class ControllerCommonFileManager extends Controller {
 						'image/pjpeg',
 						'image/png',
 						'image/x-png',
-						'image/gif'
+						'image/gif',
+						//user code starts
+						'application/vnd.ms-excel',
+						'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+						'application/pdf',
+						//end user code
 					);
 	
 					if (!in_array($file['type'], $allowed)) {
