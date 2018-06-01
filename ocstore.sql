@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 06 2018 г., 20:11
+-- Время создания: Июн 01 2018 г., 22:31
 -- Версия сервера: 5.6.38
 -- Версия PHP: 5.5.38
 
@@ -55,7 +55,8 @@ INSERT INTO `oc_address` (`address_id`, `customer_id`, `firstname`, `lastname`, 
 (5, 5, 'aue', 'ryu', '', 'address', '', 'city', '', 176, 2775, ''),
 (6, 6, 'name', 'surname', '', 'address', '', 'city', '', 176, 2775, ''),
 (7, 6, 'name', 'surname', 'company', 'address', '', 'city', '', 176, 2775, ''),
-(8, 7, 'ya-name', 'ya-lastname', '', 'Address', '', 'ya-Город', '0', 0, 0, 's:0:\"\";');
+(8, 7, 'ya-name', 'ya-lastname', '', 'Address', '', 'ya-Город', '0', 0, 0, 's:0:\"\";'),
+(9, 8, 'qwerty', 'qwerty', '', '1234', '', 'qwerty', '', 176, 2747, '');
 
 -- --------------------------------------------------------
 
@@ -750,7 +751,9 @@ CREATE TABLE `oc_cart` (
 --
 
 INSERT INTO `oc_cart` (`cart_id`, `api_id`, `customer_id`, `session_id`, `product_id`, `recurring_id`, `option`, `quantity`, `date_added`) VALUES
-(1, 0, 6, '8usibiq78kos898thplas0nl97', 51, 0, '[]', 1, '2018-05-03 17:01:36');
+(1, 0, 6, '8usibiq78kos898thplas0nl97', 51, 0, '[]', 1, '2018-05-03 17:01:36'),
+(3, 0, 8, 'kbvb5sjljajtki684dj52qe1j7', 53, 0, '[]', 2, '2018-06-01 22:12:19'),
+(5, 0, 0, 'kbvb5sjljajtki684dj52qe1j7', 53, 0, '[]', 1, '2018-06-01 22:27:04');
 
 -- --------------------------------------------------------
 
@@ -1277,7 +1280,7 @@ CREATE TABLE `oc_currency` (
 --
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
-(1, 'Рубль', 'RUB', '', ' р.', '2', 1.00000000, 1, '2018-05-05 20:03:14');
+(1, 'Рубль', 'RUB', '', ' р.', '2', 1.00000000, 1, '2018-06-01 22:03:19');
 
 -- --------------------------------------------------------
 
@@ -1323,7 +1326,8 @@ INSERT INTO `oc_customer` (`customer_id`, `customer_group_id`, `store_id`, `lang
 (4, 1, 0, 1, 'Валерий', 'Зуев', 'em@il.com', '', '', '9cb1e656c57911216a36d48ceeb48c3874930882', 'W7nGuuWao', NULL, NULL, 0, 4, '', '127.0.0.1', 1, 1, 0, '', '', '2018-05-03 09:44:16', ''),
 (5, 1, 0, 1, 'aue', 'ryu', 'em@il.ru', '', '', '5ced96d7eb1d7ee6e3defdc35ad8fb3d5c7d3492', 'fbSlygaTq', NULL, NULL, 0, 5, '', '127.0.0.1', 1, 1, 0, '', '', '2018-05-03 09:46:39', ''),
 (6, 1, 0, 1, 'name', 'surname', 'email@mail.ru', '', '', 'd3e811c4521040745c35f9f3aee8b71b9ccf4178', 'mx7Y4108L', NULL, NULL, 0, 6, '', '127.0.0.1', 1, 1, 0, '', '', '2018-05-03 09:55:10', ''),
-(7, 1, 0, 0, 'ya-name', 'ya-lastname', 'test@2.ru', '999999', '', 'db9de9801c46128e508f608af65e75ce7f38fa7c', 'a36d98dc8', NULL, NULL, 0, 8, 's:0:\"\";', '', 1, 0, 0, '', '', '2018-05-03 16:49:59', '');
+(7, 1, 0, 0, 'ya-name', 'ya-lastname', 'test@2.ru', '999999', '', 'db9de9801c46128e508f608af65e75ce7f38fa7c', 'a36d98dc8', NULL, NULL, 0, 8, 's:0:\"\";', '', 1, 0, 0, '', '', '2018-05-03 16:49:59', ''),
+(8, 1, 0, 1, 'qwerty', 'qwerty', 'admin@info.ru', '', '', '3869f0ef412c1ff6ea73f82cd6ed3bc18f7fc579', 'M87qV58Uh', NULL, NULL, 0, 9, '', '127.0.0.1', 1, 1, 0, '', '', '2018-06-01 22:12:18', '');
 
 -- --------------------------------------------------------
 
@@ -1415,7 +1419,8 @@ INSERT INTO `oc_customer_ip` (`customer_ip_id`, `customer_id`, `ip`, `date_added
 (3, 3, '127.0.0.1', '2018-03-28 16:02:01'),
 (4, 4, '127.0.0.1', '2018-05-03 09:45:56'),
 (5, 5, '127.0.0.1', '2018-05-03 09:54:20'),
-(6, 6, '127.0.0.1', '2018-05-03 09:55:10');
+(6, 6, '127.0.0.1', '2018-05-03 09:55:10'),
+(7, 8, '127.0.0.1', '2018-06-01 22:12:19');
 
 -- --------------------------------------------------------
 
@@ -1438,7 +1443,8 @@ CREATE TABLE `oc_customer_login` (
 
 INSERT INTO `oc_customer_login` (`customer_login_id`, `email`, `ip`, `total`, `date_added`, `date_modified`) VALUES
 (1, 'vazu@lenta.ru', '127.0.0.1', 1, '2018-03-26 17:07:39', '2018-03-26 17:07:39'),
-(2, 'random.zuev.zva@gmail.com', '127.0.0.1', 1, '2018-03-28 15:47:21', '2018-03-28 15:47:21');
+(2, 'random.zuev.zva@gmail.com', '127.0.0.1', 1, '2018-03-28 15:47:21', '2018-03-28 15:47:21'),
+(3, 'admin', '127.0.0.1', 1, '2018-06-01 22:11:28', '2018-06-01 22:11:28');
 
 -- --------------------------------------------------------
 
@@ -1600,7 +1606,8 @@ CREATE TABLE `oc_download` (
 
 INSERT INTO `oc_download` (`download_id`, `filename`, `mask`, `date_added`) VALUES
 (3, 'test_doc.pdf.lfhNPOV7UJ5lA6C77NMbR5oMl8HfvOKe', 'test_doc.pdf', '2018-03-28 17:00:49'),
-(2, 'test_doc.pdf.OSlawetOGhy0oPiwGwHG5SVZePpns6Fi', 'test_doc.pdf', '2018-03-26 17:05:20');
+(2, 'ebook1.pdf.rZeWYNp0IYfXzh5NzotmyphB6oFGpmWT', 'ebook1.pdf', '2018-03-26 17:05:20'),
+(4, 'ebook2.pdf.TAJO86ezyOn7G6KaBybwQt3SvrAG80bk', 'ebook2.pdf', '2018-06-01 22:07:26');
 
 -- --------------------------------------------------------
 
@@ -1620,7 +1627,8 @@ CREATE TABLE `oc_download_description` (
 
 INSERT INTO `oc_download_description` (`download_id`, `language_id`, `name`) VALUES
 (3, 1, 'прайс-лист'),
-(2, 1, 'Тестовый документ 1');
+(2, 1, 'Тестовый документ 1'),
+(4, 1, 'Тестовый электронный документ 2');
 
 -- --------------------------------------------------------
 
@@ -1822,7 +1830,7 @@ INSERT INTO `oc_information_description` (`information_id`, `language_id`, `titl
 (4, 1, 'О нас', '&lt;p&gt;\r\n	&lt;/p&gt;&lt;p&gt;\r\n	Дорогие друзья!&lt;br&gt;\r\n	&lt;br&gt;\r\n	Я приветствую Вас на сайте издательства «Союз художников», которое \r\nсуществует более 20 лет и с 1994 года занимается выпуском \r\nсоциально значимой литературы. Мы издаем книги и учебные пособия для \r\nобщеобразовательных школ, дошкольных учреждений, музыкальных учебных \r\nзаведений всех типов, а также литературу по истории культуры.&lt;br&gt;\r\n	&lt;br&gt;\r\n	Слово «художник» обозначает не только того, кто рисует. Художником \r\nпринято называть выдающегося писателя, известного хореографа, блестящего\r\n оратора и т.д. Одним словом, художник - человек, достигший наивысшего \r\nрасцвета в своей профессии. Вот такие художники и представлены в \r\nиздательстве. Это педагоги, композиторы, поэты, историки и многие другие\r\n замечательные люди. Нашим добрым другом был Андрей Павлович Петров. С \r\nнами сотрудничают такие замечательные композиторы, как Е. Дога, О. \r\nПетрова, С. Баневич, Г. Портнов, Л. Лядова, И. Корнелюк, И. Парфенов и \r\nмногие, многие другие. Наши авторы живут в разных странах: это Россия, \r\nУкраина, Белоруссия, Германия, Португалия, Америка.&lt;br&gt;\r\n	&lt;br&gt;\r\n	Издательство тесно взаимодействует с Учебными Методическими центрами по\r\n специальному и общему образованию, с высшими учебными заведениями, а \r\nтакже с Комитетами по образованию, культуре гг Санкт-Петербурга и \r\nМосквы.&lt;br&gt;\r\n	&lt;br&gt;\r\n	Основное внимание мы уделяем программе по развитию ребенка. Ведь дети –\r\n действительно наше будущее. Учитывая веяния времени, мы стараемся \r\nсделать процесс обучения занимательным, доступным, с внесением игровых \r\nэлементов. Многие наши пособия рекомендованы к использованию в \r\nобщеобразовательных и музыкальных школах, а также в ВУЗах.&lt;br&gt;\r\n	&lt;br&gt;\r\n	Книги, выпускаемые в издательстве, как правило, либо появляются \r\nвпервые, либо переиздаются вновь через 100-150 лет, тем самым, обретая \r\nвторую жизнь. Наши издания инновационны, интересны, замечательно \r\nоформлены. Мы не идем по пути получения прибыли за счет экономии на \r\nполиграфических материалах и художественном оформлении. Наши издания - \r\nэто наша визитная карточка. Помимо специальной литературы, книги, \r\nвыпускаемые в издательстве, будут интересны самому широкому кругу \r\nчитателей. Наши издания предназначены и для семейного чтения. \r\nИздательство работает слаженно, динамично, четко. Надеюсь и Вы сможете \r\nнайти в нашем прайс-листе необходимую литературу и она порадует Вас. \r\nСледите за нашими новинками, они появляются ежемесячно в количестве 2-8 \r\nнаименований.&lt;br&gt;\r\n	&lt;br&gt;\r\n	Желаю Вам удачи и радости от общения с книгой.&lt;/p&gt;&lt;p&gt;\r\n&lt;/p&gt;&lt;p&gt;\r\n	&amp;nbsp;&lt;/p&gt;&lt;p&gt;\r\n&lt;/p&gt;&lt;p&gt;\r\n	&lt;strong&gt;Главный редактор&lt;br&gt;\r\n	&lt;br&gt;\r\n	Анна Веселова&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;\r\n', '', '', '', ''),
 (6, 1, 'Оплата и доставка', '&lt;p&gt;\r\n	Информация о доставке&lt;/p&gt;\r\n', '', '', '', ''),
 (3, 1, 'Политика безопасности', 'Политика безопасности&lt;br&gt;', '', '', '', ''),
-(9, 1, 'Скачать прайс', '&lt;p&gt;&lt;a href=&quot;/test_doc.pdf&quot; target=&quot;_blank&quot;&gt;Прайс-лист&lt;/a&gt; в формате pdf&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
+(9, 1, 'Скачать прайс', '&lt;p&gt;&lt;a href=&quot;/test_doc.pdf&quot; target=&quot;_blank&quot;&gt;Прайс-лист&lt;/a&gt; в формате pdf&lt;br&gt;&lt;a href=&quot;http://ocstore.localhost/image/catalog/pricelists/1-05-rlc.xlsx&quot; target=&quot;_blank&quot;&gt;Прайс-лист&lt;/a&gt;&amp;nbsp;номер два&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
 (10, 1, 'Сотрудничество', '&lt;p&gt;Информация о сотрудничестве&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
 (8, 1, 'Контакты', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;h1 style=&quot;color:black;&quot;&gt;\r\n	ООО Издательство «Союз художников»&lt;/h1&gt;&lt;p class=&quot;cent &quot; style=&quot;text-align: center;&quot;&gt;\r\n	&lt;a&gt; www.unionpaint.ru&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;\r\n	&lt;b&gt;Директор:&lt;/b&gt;&amp;nbsp;Веселова Анна Ивановна&lt;/p&gt;&lt;p&gt;\r\n	Телефон для связи:&amp;nbsp;&lt;a href=&quot;tel:+78127142424&quot;&gt;+7(812) 713-84-62&lt;/a&gt;&lt;/p&gt;&lt;p&gt;\r\n	&lt;b&gt;Отдел реализации&lt;/b&gt;:&amp;nbsp;&amp;nbsp;&lt;a href=&quot;tel:+78127142424&quot;&gt;+7(812) 713-84-62&lt;/a&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&quot;tel:+78127142424&quot;&gt;+7(812) 713-60-09&lt;/a&gt;&lt;/p&gt;&lt;p&gt;\r\n	&lt;b&gt;Главный специалист по рекламно-выставочной деятельности:&lt;/b&gt;&lt;/p&gt;&lt;p&gt;\r\n	Воробьева Елена Георгиевна&lt;br&gt;\r\n	Телефон для связи: &lt;a href=&quot;tel:+78127138462&quot;&gt; +7(812) 713-84-62&lt;/a&gt;&amp;nbsp;&lt;a href=&quot;tel:+78127138462&quot;&gt;+7(921) 338-76-45&lt;/a&gt;&lt;br&gt;\r\n	Адрес электронной почты: &lt;a href=&quot;mailto:s-hudozhnik@yandex.ru&quot;&gt;s-hudozhnik@yandex.ru&lt;/a&gt;, &lt;a href=&quot;mailto:info@unionpaint.spb.ru&quot;&gt;info@unionpaint.spb.ru&lt;/a&gt;&lt;/p&gt;&lt;p&gt;\r\n	&lt;strong&gt;Редакция:&lt;/strong&gt;&amp;nbsp;+7(812) 714-24-24&lt;/p&gt;&lt;p&gt;\r\n	&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Tahoma, Verdana, sans-serif; font-size: 13px; line-height: 18.2px; text-align: center;&quot;&gt;Фактический адрес: 190121, г. Санкт-Петербург, ул. Канонерская, 31&lt;/span&gt;&lt;/p&gt;&lt;p&gt;\r\n	&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Tahoma, Verdana, sans-serif; font-size: 13px; line-height: 18.2px; text-align: center;&quot;&gt;Время работы: понедельник - пятница, c 10.00 до 17.30&lt;/span&gt;&lt;/p&gt;&lt;p&gt;\r\n	Адрес для корреспонденции:&amp;nbsp;&lt;span style=&quot;font-size:12px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Tahoma, Verdana, sans-serif;&quot;&gt;190121, &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Tahoma, Verdana, sans-serif; font-size: 13px; text-align: center;&quot;&gt;Санкт-Петербург, ул. Канонерская, 31&lt;/span&gt;&lt;span style=&quot;font-size:12px;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Arial, Tahoma, Verdana, sans-serif;&quot;&gt;, ООО Издательство &quot;Союз художников&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;\r\n	Факс:&amp;nbsp;+7(812) 713-60-09&lt;br&gt;\r\n	&lt;a href=&quot;https://vk.com/soyuz_hudozhnikov&quot;&gt;Наша группа ВКОНТАКТЕ&amp;nbsp;&amp;nbsp;https://vk.com/soyuz_hudozhnikov&lt;/a&gt;&lt;/p&gt;', '', '', '', '');
 
@@ -2469,7 +2477,8 @@ INSERT INTO `oc_order` (`order_id`, `invoice_no`, `invoice_prefix`, `store_id`, 
 (4, 0, 'INV-2018-04', 0, 'Союз Художников', 'http://opencart-not-unionpaint.localhost/ocstore/', 2, 1, '', '', 'valera.zuev.zva@gmail.com', '', '', '', '', '', '', '', '', '', '', 'Российская Федерация', 176, '', 0, '', '[]', 'Оплата при получении', 'cod', '', '', '', '', '', '', '', 'Российская Федерация', 176, '', 0, '', '[]', 'Самовывоз', 'pickup.pickup', '', '190.0000', 5, 0, '0.0000', 0, '', 1, 1, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0', 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3', '2018-03-28 18:26:33', '2018-03-28 18:27:57'),
 (5, 0, 'INV-2018-04', 0, 'Союз Художников', 'http://opencart-not-unionpaint.localhost/ocstore/', 2, 1, '', '', 'valera.zuev.zva@gmail.com', '', '', '', '', '', '', '', '', '', '', 'Российская Федерация', 176, '', 0, '', '[]', 'Оплата при получении', 'cod', '', '', '', '', '', '', '', 'Российская Федерация', 176, '', 0, '', '[]', 'Самовывоз', 'pickup.pickup', '', '190.0000', 5, 0, '0.0000', 0, '', 1, 1, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0', 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3', '2018-03-28 18:30:34', '2018-03-28 18:32:46'),
 (6, 0, 'INV-2018-04', 0, 'Союз Художников', 'http://ocstore.localhost/', 6, 1, 'name', 'surname', 'email@mail.ru', '', '', '', 'name', 'surname', 'company', 'address', '', 'city', '', 'Российская Федерация', 176, 'Камчатский край', 2775, '', '[]', 'Бесплатный заказ', 'free_checkout', '', '', '', '', '', '', '', '', 0, '', 0, '', '[]', '', '', '', '0.0000', 5, 0, '0.0000', 0, '', 1, 1, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0', 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3', '2018-05-03 10:06:48', '2018-05-03 10:07:56'),
-(7, 0, 'INV-2018-04', 0, 'Союз Художников', 'http://ocstore.localhost/', 6, 1, 'name', 'surname', 'email@mail.ru', '', '', '', 'name', 'surname', '', 'address', '', 'city', '', 'Российская Федерация', 176, 'Камчатский край', 2775, '', '[]', 'Яндекс.Касса (банковские карты, электронные деньги и другое)', 'yamodule', 'name', 'surname', '', 'address', '', 'city', '', 'Российская Федерация', 176, 'Камчатский край', 2775, '', '[]', 'Самовывоз', 'pickup.pickup', '', '190.0000', 1, 0, '0.0000', 0, '', 1, 1, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0', 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3', '2018-05-03 17:02:05', '2018-05-03 17:02:10');
+(7, 0, 'INV-2018-04', 0, 'Союз Художников', 'http://ocstore.localhost/', 6, 1, 'name', 'surname', 'email@mail.ru', '', '', '', 'name', 'surname', '', 'address', '', 'city', '', 'Российская Федерация', 176, 'Камчатский край', 2775, '', '[]', 'Яндекс.Касса (банковские карты, электронные деньги и другое)', 'yamodule', 'name', 'surname', '', 'address', '', 'city', '', 'Российская Федерация', 176, 'Камчатский край', 2775, '', '[]', 'Самовывоз', 'pickup.pickup', '', '190.0000', 1, 0, '0.0000', 0, '', 1, 1, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0', 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3', '2018-05-03 17:02:05', '2018-05-03 17:02:10'),
+(8, 0, 'INV-2018-04', 0, 'Союз Художников', 'http://ocstore.localhost/', 8, 1, 'qwerty', 'qwerty', 'admin@info.ru', '', '', '', 'qwerty', 'qwerty', '', '1234', '', 'qwerty', '', 'Российская Федерация', 176, 'Кемеровская область', 2747, '', '[]', 'Яндекс.Касса (банковские карты, электронные деньги и другое)', 'yamodule', '', '', '', '', '', '', '', '', 0, '', 0, '', '[]', '', '', '', '0.0000', 1, 0, '0.0000', 0, '', 1, 1, 'RUB', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36', 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7', '2018-06-01 22:13:19', '2018-06-01 22:13:22');
 
 -- --------------------------------------------------------
 
@@ -2521,7 +2530,8 @@ INSERT INTO `oc_order_history` (`order_history_id`, `order_id`, `order_status_id
 (11, 5, 5, 1, '', '2018-03-28 18:32:46'),
 (12, 6, 1, 0, '', '2018-05-03 10:06:51'),
 (13, 6, 5, 1, '', '2018-05-03 10:07:56'),
-(14, 7, 1, 1, '', '2018-05-03 17:02:10');
+(14, 7, 1, 1, '', '2018-05-03 17:02:10'),
+(15, 8, 1, 1, '', '2018-06-01 22:13:22');
 
 -- --------------------------------------------------------
 
@@ -2570,7 +2580,8 @@ INSERT INTO `oc_order_product` (`order_product_id`, `order_id`, `product_id`, `n
 (4, 4, 51, 'Давлетова К. Обучая, обучаюсь. Учебно-методическое пособие', '1', 1, '190.0000', '190.0000', '0.0000', 0),
 (5, 5, 51, 'Давлетова К. Обучая, обучаюсь. Учебно-методическое пособие', '1', 1, '190.0000', '190.0000', '0.0000', 0),
 (6, 6, 53, 'Тестовый электронный документ', '1', 1, '0.0000', '0.0000', '0.0000', 0),
-(7, 7, 51, 'Давлетова К. Обучая, обучаюсь. Учебно-методическое пособие', '1', 1, '190.0000', '190.0000', '0.0000', 0);
+(7, 7, 51, 'Давлетова К. Обучая, обучаюсь. Учебно-методическое пособие', '1', 1, '190.0000', '190.0000', '0.0000', 0),
+(8, 8, 53, 'Тестовый электронный документ 1', '1', 1, '0.0000', '0.0000', '0.0000', 0);
 
 -- --------------------------------------------------------
 
@@ -2685,7 +2696,9 @@ INSERT INTO `oc_order_total` (`order_total_id`, `order_id`, `code`, `title`, `va
 (18, 6, 'total', 'Итого', '0.0000', 9),
 (19, 7, 'sub_total', 'Предварительная стоимость', '190.0000', 1),
 (20, 7, 'shipping', 'Самовывоз', '0.0000', 3),
-(21, 7, 'total', 'Итого', '190.0000', 9);
+(21, 7, 'total', 'Итого', '190.0000', 9),
+(22, 8, 'sub_total', 'Предварительная стоимость', '0.0000', 1),
+(23, 8, 'total', 'Итого', '0.0000', 9);
 
 -- --------------------------------------------------------
 
@@ -2771,9 +2784,9 @@ CREATE TABLE `oc_product` (
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
 (51, '1', '', '', '', '', '0422', '', '', 100, 7, 'catalog/sintezator/_K_Obuchayaobuchayus_1359709746.jpg', 0, 1, '190.0000', 0, 0, '2018-03-22', '0.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 1, 1, 9, '2018-03-22 08:34:43', '2018-05-04 18:26:58'),
 (52, '1', '', '', '', '', '', '', '', 1, 7, 'catalog/fortepiano/Gammi_arpedgio_1354475390.jpg', 0, 1, '180.0000', 0, 0, '2018-03-22', '0.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 1, 1, 0, '2018-03-22 08:43:51', '2018-05-04 18:27:32'),
-(53, '1', '', '', '', '', '', '', '', 1, 7, '', 0, 0, '0.0000', 0, 0, '2018-03-22', '0.00', 1, '0.00', '0.00', '0.00', 1, 0, 1, 1, 1, 14, '2018-03-22 19:12:42', '2018-05-04 18:23:01'),
-(54, '1', '', '', '', '', '', '', '', 1, 7, 'catalog/images_usr/img_2456.jpg', 0, 1, '0.0000', 0, 0, '2018-05-04', '0.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 1, 1, 0, '2018-05-04 21:19:38', '2018-05-05 20:04:52'),
-(50, '1', '', '', '', '', '', '', '', 10, 7, 'catalog/fortepiano/_Podgotovka_k_olimpiade_ISMN_fortepiano_1392022831.jpg', 0, 1, '150.0000', 0, 9, '2018-03-22', '0.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 1, 1, 4, '2018-03-22 08:22:21', '2018-05-04 18:23:21');
+(53, '1', '', '', '', '', '', '', '', 1, 7, 'catalog/pricelists/titlepage1.png', 0, 0, '0.0000', 0, 0, '2018-03-22', '0.00', 1, '0.00', '0.00', '0.00', 1, 0, 1, 1, 1, 16, '2018-03-22 19:12:42', '2018-06-01 22:06:35'),
+(50, '1', '', '', '', '', '', '', '', 10, 7, 'catalog/fortepiano/_Podgotovka_k_olimpiade_ISMN_fortepiano_1392022831.jpg', 0, 1, '150.0000', 0, 9, '2018-03-22', '0.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 1, 1, 4, '2018-03-22 08:22:21', '2018-05-04 18:23:21'),
+(55, '1', '', '', '', '', '', '', '', 1, 7, 'catalog/pricelists/titlepage2.png', 0, 1, '0.0000', 0, 0, '2018-06-01', '0.00', 1, '0.00', '0.00', '0.00', 1, 1, 1, 1, 1, 0, '2018-06-01 22:08:54', '2018-06-01 22:09:40');
 
 -- --------------------------------------------------------
 
@@ -2811,11 +2824,11 @@ CREATE TABLE `oc_product_description` (
 --
 
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_h1`, `meta_description`, `meta_keyword`) VALUES
-(54, 1, 'Я тест', '&lt;p&gt;Тестовый продукт для изучения принципа составления категорий на главной странице (по дате добавления ил по алфавиту?)&lt;br&gt;&lt;/p&gt;', '', '', '', '', ''),
 (50, 1, 'Акбалькан Е. Подготовка к Олимпиаде. Сборник пьес-упражнений для фортепиано.', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;ISMN&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;979-0-706379-46-3&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Автор&lt;strong&gt; &lt;/strong&gt;-&lt;strong&gt;&amp;nbsp;Акбалькан Е&lt;/strong&gt;.&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Язык - русский&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;28 стр. 2013 г.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Сборник пьес-упражнений для фортепиано.Предназначен для учащихся подготовительного отделения, 1-2 классов ДМШ и ДШИ.&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', '', ''),
 (51, 1, 'Давлетова К. Обучая, обучаюсь. Учебно-методическое пособие', '&lt;p&gt;Для начинающих преподавателей класса клавишного синтезатора и их \r\nучеников. Рекомендовано ГОУ ЦО СПб. В сборник вошли упражнения, \r\nметодические рекомендации и нотный материал. &lt;/p&gt;&lt;p&gt;60 стр. 2012г.&lt;br&gt;&lt;/p&gt;', '', '', '', '', ''),
 (52, 1, 'Алексеева И. Гаммы и арпеджио', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;\r\n	Составители - &lt;strong&gt;Алексеева И&lt;/strong&gt;., &lt;strong&gt;Сухова В&lt;/strong&gt;.&amp;nbsp;&lt;/p&gt;&lt;p&gt;\r\n&lt;br&gt;&lt;/p&gt;&lt;p&gt;\r\n	Язык - русский&amp;nbsp;&lt;/p&gt;&lt;p&gt;\r\n&lt;br&gt;&lt;/p&gt;&lt;p&gt;\r\n	56 стр. 2008 г.&lt;/p&gt;&lt;p&gt;\r\n&lt;br&gt;&lt;/p&gt;&lt;p&gt;\r\n	Учебное пособие для учащихся средних и старших классов ДМШ.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', '', ''),
-(53, 1, 'Тестовый электронный документ', '&lt;p&gt;Тестовый электронный документ. Не содержит информативного контента&lt;br&gt;&lt;/p&gt;', '', '', '', '', '');
+(53, 1, 'Тестовый электронный документ 1', 'Образец электронного документа для тестирования продажи электронных изданий', '', '', '', '', ''),
+(55, 1, 'Тестовый электронный документ 2', '&lt;p&gt;Документ для тестирования продажи электронных изданий&lt;/p&gt;', '', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -2965,14 +2978,10 @@ CREATE TABLE `oc_product_to_category` (
 INSERT INTO `oc_product_to_category` (`product_id`, `category_id`, `main_category`) VALUES
 (52, 64, 0),
 (52, 63, 0),
-(53, 64, 0),
-(54, 64, 0),
+(53, 63, 0),
 (52, 59, 0),
 (51, 63, 0),
-(54, 25, 1),
-(53, 63, 0),
-(54, 65, 0),
-(54, 63, 0),
+(53, 64, 0),
 (51, 59, 0),
 (51, 61, 1),
 (50, 64, 0),
@@ -2980,7 +2989,10 @@ INSERT INTO `oc_product_to_category` (`product_id`, `category_id`, `main_categor
 (50, 59, 0),
 (51, 64, 0),
 (52, 60, 1),
-(50, 60, 1);
+(50, 60, 1),
+(55, 63, 1),
+(55, 25, 0),
+(55, 65, 0);
 
 -- --------------------------------------------------------
 
@@ -3021,7 +3033,7 @@ INSERT INTO `oc_product_to_layout` (`product_id`, `store_id`, `layout_id`) VALUE
 (51, 0, 0),
 (52, 0, 0),
 (53, 0, 0),
-(54, 0, 0);
+(55, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -3043,7 +3055,7 @@ INSERT INTO `oc_product_to_store` (`product_id`, `store_id`) VALUES
 (51, 0),
 (52, 0),
 (53, 0),
-(54, 0);
+(55, 0);
 
 -- --------------------------------------------------------
 
@@ -3704,7 +3716,7 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (637, 'account/return/add', 'add-return'),
 (638, 'common/home', ''),
 (879, 'information_id=4', 'about'),
-(882, 'information_id=9', 'pricelist'),
+(889, 'information_id=9', 'pricelist'),
 (883, 'information_id=10', 'partnership'),
 (888, 'category_id=25', 'ebooks'),
 (885, 'product_id=51', 'davletova-obuchaa-obuchaas'),
@@ -9061,7 +9073,7 @@ ALTER TABLE `oc_zone_to_geo_zone`
 -- AUTO_INCREMENT для таблицы `oc_address`
 --
 ALTER TABLE `oc_address`
-  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `address_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_affiliate`
@@ -9181,7 +9193,7 @@ ALTER TABLE `oc_bm_review`
 -- AUTO_INCREMENT для таблицы `oc_cart`
 --
 ALTER TABLE `oc_cart`
-  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_category`
@@ -9223,7 +9235,7 @@ ALTER TABLE `oc_currency`
 -- AUTO_INCREMENT для таблицы `oc_customer`
 --
 ALTER TABLE `oc_customer`
-  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_activity`
@@ -9247,13 +9259,13 @@ ALTER TABLE `oc_customer_history`
 -- AUTO_INCREMENT для таблицы `oc_customer_ip`
 --
 ALTER TABLE `oc_customer_ip`
-  MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `customer_ip_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_login`
 --
 ALTER TABLE `oc_customer_login`
-  MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `customer_login_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_customer_reward`
@@ -9289,7 +9301,7 @@ ALTER TABLE `oc_custom_field_value`
 -- AUTO_INCREMENT для таблицы `oc_download`
 --
 ALTER TABLE `oc_download`
-  MODIFY `download_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `download_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_event`
@@ -9415,7 +9427,7 @@ ALTER TABLE `oc_option_value`
 -- AUTO_INCREMENT для таблицы `oc_order`
 --
 ALTER TABLE `oc_order`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_order_custom_field`
@@ -9427,7 +9439,7 @@ ALTER TABLE `oc_order_custom_field`
 -- AUTO_INCREMENT для таблицы `oc_order_history`
 --
 ALTER TABLE `oc_order_history`
-  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `order_history_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_order_option`
@@ -9439,7 +9451,7 @@ ALTER TABLE `oc_order_option`
 -- AUTO_INCREMENT для таблицы `oc_order_product`
 --
 ALTER TABLE `oc_order_product`
-  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `order_product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_order_recurring`
@@ -9463,7 +9475,7 @@ ALTER TABLE `oc_order_status`
 -- AUTO_INCREMENT для таблицы `oc_order_total`
 --
 ALTER TABLE `oc_order_total`
-  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `order_total_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_order_voucher`
@@ -9475,7 +9487,7 @@ ALTER TABLE `oc_order_voucher`
 -- AUTO_INCREMENT для таблицы `oc_product`
 --
 ALTER TABLE `oc_product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_product_discount`
@@ -9613,7 +9625,7 @@ ALTER TABLE `oc_upload`
 -- AUTO_INCREMENT для таблицы `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=889;
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=890;
 
 --
 -- AUTO_INCREMENT для таблицы `oc_user`
