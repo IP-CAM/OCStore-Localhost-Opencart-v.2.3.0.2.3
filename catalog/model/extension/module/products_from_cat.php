@@ -66,7 +66,7 @@ class ModelExtensionModuleProductsFromCat extends Model {
 			echo $id;
 		}*/
 		
-		$product_ids = array_slice($product_ids, 0, $limit+1);
+		$product_ids = array_slice($product_ids, 0, $limit);
 		
 		return $product_ids;
 	}

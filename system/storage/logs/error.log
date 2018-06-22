@@ -187,3 +187,10 @@
 2018-06-01 22:10:54 - PHP Notice:  Undefined variable: error_telephone in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 77
 2018-06-01 22:10:54 - PHP Notice:  Undefined variable: fax in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 86
 2018-06-01 22:10:54 - PHP Notice:  Undefined variable: company in D:\OSPanel\domains\ocstore.localhost\catalog\view\theme\default\template\account\register.tpl on line 250
+2018-06-17 18:16:55 - Export/Import: Отсутствуют product_ids в файле 'Products'!
+2018-06-17 18:18:50 - Export/Import: Отсутствуют product_ids в файле 'Products'!
+2018-06-17 18:20:29 - Export/Import: Отсутствуют product_ids в файле 'Products'!
+2018-06-17 18:55:51 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-06-17 18:56:39 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-06-17 18:56:50 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
+2018-06-17 18:56:59 - PHP Notice:  Undefined variable: link in D:\OSPanel\domains\ocstore.localhost\admin\view\template\extension\module\products_from_cat.tpl on line 109
